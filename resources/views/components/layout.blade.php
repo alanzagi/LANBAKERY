@@ -4,7 +4,7 @@
     <x-head :title="$title"></x-head>
 
     <body>
-        <x-nav-bar></x-nav-bar>
+        <x-nav-bar :title="$title"></x-nav-bar>
 
         @yield('page')
 
