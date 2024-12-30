@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BerandaController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [IndexController::class, 'showIndex'])->name('index');
+Route::get('/', [BerandaController::class, 'showBeranda'])->name('beranda');

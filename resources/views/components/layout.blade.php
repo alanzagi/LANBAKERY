@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
     <x-head :title="$title"></x-head>
 
     <body>
