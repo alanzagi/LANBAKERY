@@ -33,8 +33,134 @@
             <img src="{{ asset('images/donut.jpg') }}" alt="Donut" class="w-40 rounded-full mx-auto">
         </section> --}}
 
-        <section class="bg-yellow-300 font-poppins">
+        <section class="bg-yellow-300 font-poppins px-5 lg:px-28">
+            <div class="space-y-10">
+                <div class="flex flex-col items-center justify-center">
+                    <h2 class="text-gray-800 font-bold text-3xl md:text-3xl">Produk Kami</h2>
+                    <hr class="border-2 border-gray-800 w-20 mt-4">
+                </div>
+                <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
 
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     @endsection
 </x-layout>
