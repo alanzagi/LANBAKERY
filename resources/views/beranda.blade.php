@@ -26,14 +26,7 @@
             </div>
         </main>
 
-        {{-- <section class="grid grid-cols-2 bg-yellow-300">
-            <img src="{{ asset('images/black_forest_cake.jpg') }}" alt="Black Forest Cake"
-                class="w-40 rounded-full col-span-2 mx-auto">
-            <img src="{{ asset('images/croissant.jpg') }}" alt="Croissant" class="w-40 rounded-full mx-auto">
-            <img src="{{ asset('images/donut.jpg') }}" alt="Donut" class="w-40 rounded-full mx-auto">
-        </section> --}}
-
-        <section class="bg-yellow-300 font-poppins px-5 lg:px-28">
+        <section class="bg-yellow-300 font-poppins px-5 pb-20 lg:px-28">
             <div class="space-y-10">
                 <div class="flex flex-col items-center justify-center">
                     <h2 class="text-gray-800 font-bold text-3xl md:text-3xl">Produk Kami</h2>
@@ -45,7 +38,7 @@
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
-                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                    <img src="{{ asset('images/jajan-pasar.jpg') }}" alt="Jajan-Pasar.jpg"
                                         class="w-full h-72 object-cover md:h-48" />
                                 </figure>
                                 <div class="px-6 py-6 text-center h-full">
@@ -60,11 +53,11 @@
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
-                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                    <img src="{{ asset('images/roll-tart.jpg') }}" alt="Roll-Tart.jpg"
                                         class="w-full h-72 object-cover md:h-48" />
                                 </figure>
                                 <div class="px-6 py-6 text-center h-full">
-                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                    <h1 class="text-2xl text-gray-800 font-bold">Roll Tart</h1>
                                 </div>
                             </article>
                         </a>
@@ -75,11 +68,11 @@
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
-                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                    <img src="{{ asset('images/brownies.jpg') }}" alt="Brownies.jpg"
                                         class="w-full h-72 object-cover md:h-48" />
                                 </figure>
                                 <div class="px-6 py-6 text-center h-full">
-                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                    <h1 class="text-2xl text-gray-800 font-bold">Brownies</h1>
                                 </div>
                             </article>
                         </a>
@@ -90,11 +83,11 @@
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
-                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                    <img src="{{ asset('images/paketan.jpg') }}" alt="Paketan.jpg"
                                         class="w-full h-72 object-cover md:h-48" />
                                 </figure>
                                 <div class="px-6 py-6 text-center h-full">
-                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                    <h1 class="text-2xl text-gray-800 font-bold">Paketan</h1>
                                 </div>
                             </article>
                         </a>
@@ -105,11 +98,11 @@
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
-                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                    <img src="{{ asset('images/cake.jpg') }}" alt="Cake.jpg"
                                         class="w-full h-72 object-cover md:h-48" />
                                 </figure>
                                 <div class="px-6 py-6 text-center h-full">
-                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                    <h1 class="text-2xl text-gray-800 font-bold">Cake</h1>
                                 </div>
                             </article>
                         </a>
@@ -120,11 +113,11 @@
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
-                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                    <img src="{{ asset('images/roti-manis.jpg') }}" alt="Roti-Manis.jpg"
                                         class="w-full h-72 object-cover md:h-48" />
                                 </figure>
                                 <div class="px-6 py-6 text-center h-full">
-                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                    <h1 class="text-2xl text-gray-800 font-bold">Roti Manis</h1>
                                 </div>
                             </article>
                         </a>
@@ -135,11 +128,11 @@
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
-                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                    <img src="{{ asset('images/roti-mini.jpg') }}" alt="Kue Kering.jpg"
                                         class="w-full h-72 object-cover md:h-48" />
                                 </figure>
                                 <div class="px-6 py-6 text-center h-full">
-                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                    <h1 class="text-2xl text-gray-800 font-bold">Roti Mini</h1>
                                 </div>
                             </article>
                         </a>
@@ -150,15 +143,86 @@
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
-                                    <img src="{{ asset('images/donut.jpg') }}" alt="thumbnail"
+                                    <img src="{{ asset('images/roti-tawar.jpg') }}" alt="Roti Tawar.jpg"
                                         class="w-full h-72 object-cover md:h-48" />
                                 </figure>
                                 <div class="px-6 py-6 text-center h-full">
-                                    <h1 class="text-2xl text-gray-800 font-bold">Jajan Pasar</h1>
+                                    <h1 class="text-2xl text-gray-800 font-bold">Roti Tawar</h1>
                                 </div>
                             </article>
                         </a>
                     </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/roti-kepang.jpg') }}" alt="Roti-Kepang.jpg"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Roti Kepang</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/donut.jpg') }}" alt="Donut.jpg"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Donut</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/puding.jpg') }}" alt="Puding.jpg"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Puding</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <div
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        <a href="" class="block cursor-pointer">
+                            <article class="w-full h-full">
+                                <figure class="w-full h-1/2 border-gray-800 border-b-2">
+                                    <img src="{{ asset('images/kue-kering.jpg') }}" alt="Kue Kering.jpg"
+                                        class="w-full h-72 object-cover md:h-48" />
+                                </figure>
+                                <div class="px-6 py-6 text-center h-full">
+                                    <h1 class="text-2xl text-gray-800 font-bold">Kue Kering</h1>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-yellow-300 font-poppins px-5 lg:px-28">
+            <div class="space-y-10">
+                <div class="flex flex-col items-center justify-center">
+                    <h2 class="text-gray-800 font-bold text-3xl md:text-3xl">Keunggulan Kami</h2>
+                    <hr class="border-2 border-gray-800 w-20 mt-4">
                 </div>
             </div>
         </section>
