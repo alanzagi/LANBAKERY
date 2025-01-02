@@ -219,7 +219,7 @@
             </div>
         </section>
 
-        <section class="bg-yellow-300 font-poppins px-4 lg:px-28">
+        <section class="bg-yellow-300 font-poppins px-4 pb-20 lg:px-28">
             <div class="space-y-10">
                 <div class="text-center">
                     <h2 class="text-gray-800 font-bold text-3xl md:text-3xl">Keunggulan Kami</h2>
