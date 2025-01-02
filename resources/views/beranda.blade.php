@@ -7,7 +7,7 @@
                     <p class="text-gray-800 font-normal text-md pr-20 max-w-lg md:text-xl lg:text-2xl">
                         "Toko roti terbaik dengan rasa istimewa, selalu dan pasti selera untuk semua pelanggan."
                     </p>
-                    <a href="" target="_blank" class="bg-gray-800 duration-200 self-start mt-3 rounded">
+                    <a href="{{ route('produk') }}" class="bg-gray-800 duration-200 self-start mt-3 rounded">
                         <div
                             class="bg-gray-200 active:translate-x-0 active:translate-y-0 active:bg-gray-200 border-gray-800 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 rounded lg:px-5 lg:py-4 hover:bg-yellow-300">
                             <span class="duration-200 flex justify-start items-center space-x-2">
@@ -229,7 +229,7 @@
                 <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     <!-- Keunggulan 1 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -247,7 +247,7 @@
 
                     <!-- Keunggulan 2 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -265,7 +265,7 @@
 
                     <!-- Keunggulan 3 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -282,7 +282,7 @@
 
                     <!-- Keunggulan 4 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -300,7 +300,7 @@
 
                     <!-- Keunggulan 5 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -317,7 +317,7 @@
 
                     <!-- Keunggulan 6 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
