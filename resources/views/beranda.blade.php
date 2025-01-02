@@ -219,16 +219,16 @@
             </div>
         </section>
 
-        <section class="bg-yellow-300 font-poppins px-5 lg:px-28">
+        <section class="bg-yellow-300 font-poppins px-4 lg:px-28">
             <div class="space-y-10">
                 <div class="flex flex-col items-center justify-center">
                     <h2 class="text-gray-800 font-bold text-3xl md:text-3xl">Keunggulan Kami</h2>
                     <hr class="border-2 border-gray-800 w-20 mt-4">
                 </div>
 
-                <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+                <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     <article
-                        class="group bg-white rounded border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -248,22 +248,84 @@
                     </article>
 
                     <article
-                        class="group bg-white rounded border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
                                 <path
-                                    d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-75 29-147t81-128.5q52-56.5 125-91T475-881q21 0 43 2t45 7q-9 45 6 85t45 66.5q30 26.5 71.5 36.5t85.5-5q-26 59 7.5 113t99.5 56q1 11 1.5 20.5t.5 20.5q0 82-31.5 154.5t-85.5 127q-54 54.5-127 86T480-80Zm-60-480q25 0 42.5-17.5T480-620q0-25-17.5-42.5T420-680q-25 0-42.5 17.5T360-620q0 25 17.5 42.5T420-560Zm-80 200q25 0 42.5-17.5T400-420q0-25-17.5-42.5T340-480q-25 0-42.5 17.5T280-420q0 25 17.5 42.5T340-360Zm260 40q17 0 28.5-11.5T640-360q0-17-11.5-28.5T600-400q-17 0-28.5 11.5T560-360q0 17 11.5 28.5T600-320ZM480-160q122 0 216.5-84T800-458q-50-22-78.5-60T683-603q-77-11-132-66t-68-132q-80-2-140.5 29t-101 79.5Q201-644 180.5-587T160-480q0 133 93.5 226.5T480-160Zm0-324Z" />
+                                    d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z" />
                             </svg>
-                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Banyak Varian</h1>
+                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Bahan Terbaik & Tanpa
+                                Pengawet</h1>
                         </header>
                         <section>
-                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Toko kami mempunyai lebih
-                                dari 500
-                                varian
-                                produk yang bermacam-macam,
-                                mulai dari roti mini
-                                dan jajan pasar hingga spiku dan brownies.</p>
+                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Semua produk kami
+                                menggunakan bahan terbaik, berkualitas dan bebas dari berbagai macam pengawet makanan.</p>
+                        </section>
+                    </article>
+
+                    <article
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        <header class="flex flex-col space-y-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
+                                <path
+                                    d="M260-361v-40H160v-80h200v-80H200q-17 0-28.5-11.5T160-601v-160q0-17 11.5-28.5T200-801h60v-40h80v40h100v80H240v80h160q17 0 28.5 11.5T440-601v160q0 17-11.5 28.5T400-401h-60v40h-80Zm298 240L388-291l56-56 114 114 226-226 56 56-282 282Z" />
+                            </svg>
+                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Harga Bersaing</h1>
+                        </header>
+                        <section>
+                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Semua produk kami memiliki
+                                harga yang bersaing di pasaran.</p>
+                        </section>
+                    </article>
+
+                    <article
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        <header class="flex flex-col space-y-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
+                                <path
+                                    d="M280-880h400v314q0 23-10 41t-28 29l-142 84 28 92h152l-124 88 48 152-124-94-124 94 48-152-124-88h152l28-92-142-84q-18-11-28-29t-10-41v-314Zm80 80v234l80 48v-282h-80Zm240 0h-80v282l80-48v-234ZM480-647Zm-40-12Zm80 0Z" />
+                            </svg>
+                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Meraih Penghargaan</h1>
+                        </header>
+                        <section>
+                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Toko kami memenangkan
+                                beberapa penghargaan bergengsi di Indonesia seperti rekor MURI dan Jawa Pos Culinary Awards.
+                            </p>
+                        </section>
+                    </article>
+
+                    <article
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        <header class="flex flex-col space-y-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
+                                <path
+                                    d="M260-361v-40H160v-80h200v-80H200q-17 0-28.5-11.5T160-601v-160q0-17 11.5-28.5T200-801h60v-40h80v40h100v80H240v80h160q17 0 28.5 11.5T440-601v160q0 17-11.5 28.5T400-401h-60v40h-80Zm298 240L388-291l56-56 114 114 226-226 56 56-282 282Z" />
+                            </svg>
+                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Harga Bersaing</h1>
+                        </header>
+                        <section>
+                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Semua produk kami memiliki
+                                harga yang bersaing di pasaran.</p>
+                        </section>
+                    </article>
+
+                    <article
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        <header class="flex flex-col space-y-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
+                                <path
+                                    d="M260-361v-40H160v-80h200v-80H200q-17 0-28.5-11.5T160-601v-160q0-17 11.5-28.5T200-801h60v-40h80v40h100v80H240v80h160q17 0 28.5 11.5T440-601v160q0 17-11.5 28.5T400-401h-60v40h-80Zm298 240L388-291l56-56 114 114 226-226 56 56-282 282Z" />
+                            </svg>
+                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Harga Bersaing</h1>
+                        </header>
+                        <section>
+                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Semua produk kami memiliki
+                                harga yang bersaing di pasaran.</p>
                         </section>
                     </article>
                 </div>
