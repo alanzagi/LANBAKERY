@@ -28,37 +28,37 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ route('produk') }}"
                             class="block py-2 px-3 rounded text-gray-800 transition duration-300 hover:text-yellow-300 hover:bg-gray-800 lg:px-5 lg:py-2.5 lg:ring-2 lg:ring-gray-800 lg:rounded-xl 
-                                   {{ $title == 'Tentang' ? 'bg-gray-800 text-yellow-300' : 'bg-transparent' }}">
-                            Tentang
+                                   {{ $title == 'Produk' ? 'bg-gray-800 text-yellow-300' : 'bg-transparent' }}">
+                            Produk
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ route('berita') }}"
                             class="block py-2 px-3 rounded text-gray-800 transition duration-300 hover:text-yellow-300 hover:bg-gray-800 lg:px-5 lg:py-2.5 lg:ring-2 lg:ring-gray-800 lg:rounded-xl 
-                                   {{ $title == 'Layanan' ? 'bg-gray-800 text-yellow-300' : 'bg-transparent' }}">
-                            Layanan
+                                   {{ $title == 'Berita' ? 'bg-gray-800 text-yellow-300' : 'bg-transparent' }}">
+                            Berita
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ route('kontak') }}"
                             class="block py-2 px-3 rounded text-gray-800 transition duration-300 hover:text-yellow-300 hover:bg-gray-800 lg:px-5 lg:py-2.5 lg:ring-2 lg:ring-gray-800 lg:rounded-xl 
                                    {{ $title == 'Kontak' ? 'bg-gray-800 text-yellow-300' : 'bg-transparent' }}">
                             Kontak
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ route('toko') }}"
                             class="block py-2 px-3 rounded text-gray-800 transition duration-300 hover:text-yellow-300 hover:bg-gray-800 lg:px-5 lg:py-2.5 lg:ring-2 lg:ring-gray-800 lg:rounded-xl 
                                    {{ $title == 'Toko Kami' ? 'bg-gray-800 text-yellow-300' : 'bg-transparent' }}">
                             Toko Kami
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ route('keranjang') }}"
                             class="block py-2 px-3 rounded text-gray-800 transition duration-300 hover:text-yellow-300 hover:bg-gray-800 lg:px-5 lg:py-2.5 lg:ring-2 lg:ring-gray-800 lg:rounded-xl 
-                                   {{ $title == 'Kontak' ? 'bg-gray-800 text-yellow-300' : 'bg-transparent' }}">
+                                   {{ $title == 'Keranjang' ? 'bg-gray-800 text-yellow-300' : 'bg-transparent' }}">
                             Keranjang
                         </a>
                     </li>

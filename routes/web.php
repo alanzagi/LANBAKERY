@@ -15,4 +15,4 @@ Route::get('/berita', [BeritaController::class, 'showBerita'])->name('berita');
 Route::get('/toko', [TokoController::class, 'showToko'])->name('toko');
 Route::get('/kontak', [KontakController::class, 'showKontak'])->name('kontak');
 Route::get('/keranjang', [KeranjangController::class, 'showKeranjang'])->name('keranjang');
-Route::get('/kontak', [DisclaimerController::class, 'showDisclaimer'])->name('disclaimer');
+Route::get('/disclaimer', [DisclaimerController::class, 'showDisclaimer'])->name('disclaimer');

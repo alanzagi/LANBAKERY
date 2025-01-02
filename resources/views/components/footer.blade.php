@@ -2,22 +2,22 @@
     <div class="mx-auto w-full max-w-screen-xl">
         <div class="grid grid-cols-2 gap-8 px-10 py-6 lg:py-8 md:grid-cols-4">
             <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-200 uppercase">Company</h2>
+                <h2 class="mb-6 text-sm font-semibold text-gray-200 uppercase">Useful Links</h2>
                 <ul class="text-gray-200 font-medium text-sm">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Beranda</a>
+                        <a href="{{ route('beranda') }}" class="hover:underline">Beranda</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Produk</a>
+                        <a href="{{ route('produk') }}" class="hover:underline">Produk</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Berita</a>
+                        <a href="{{ route('berita') }}" class="hover:underline">Berita</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Toko Kami</a>
+                        <a href="{{ route('toko') }}" class="hover:underline">Toko Kami</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Disclaimer</a>
+                        <a href="{{ route('disclaimer') }}" class="hover:underline">Disclaimer</a>
                     </li>
                 </ul>
             </div>
@@ -37,7 +37,8 @@
                             79116.</p>
                         <span>
                             <span>Whatsapp:</span>
-                            <a href="https://wa.me/6281521550913" class="text-yellow-300 hover:underline">+62 815
+                            <a href="https://wa.me/6281521550913" target="_blank"
+                                class="text-yellow-300 hover:underline">+62 815
                                 2155
                                 0913</a>
                         </span>
@@ -56,7 +57,8 @@
             </div>
         </div>
         <div class="px-4 py-6 bg-gray-800 md:flex md:items-center md:justify-between">
-            <span class="text-sm text-gray-200 sm:text-center">© {{ now()->year }} <a href="{{ route('beranda') }}"
+            <span class="text-sm text-gray-200 sm:text-center">© {{ now()->year }}
+                <a href="https://instagram.com/alanzagi" target="_blank"
                     class="hover:underline hover:text-yellow-300">Alan Zagi</a>.
                 All
                 Rights Reserved.
