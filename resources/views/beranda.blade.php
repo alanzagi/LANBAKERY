@@ -17,7 +17,7 @@
                                         d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
                                 </svg>
                                 <span
-                                    class="flex justify-start items-center font-medium opacity-80 hover:opacity-100 lg:uppercase lg:font-bold ">Pesan
+                                    class="flex justify-start items-center font-medium text-gray-800 lg:uppercase lg:font-bold ">Pesan
                                     Sekarang</span>
                             </span>
                         </div>
@@ -32,9 +32,10 @@
                     <h2 class="text-gray-800 font-bold text-3xl md:text-3xl">Produk Kami</h2>
                     <hr class="border-2 border-gray-800 w-20 mt-4">
                 </div>
+
                 <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -49,7 +50,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -64,7 +65,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -79,7 +80,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -94,7 +95,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -109,7 +110,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -124,7 +125,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -139,7 +140,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -154,7 +155,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -169,7 +170,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -184,7 +185,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -199,7 +200,7 @@
                     </div>
 
                     <div
-                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white hover:transition-all hover:duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
+                        class="w-full h-full border-gray-800 border-2 rounded-md bg-white transition duration-200 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_rgba(31,41,55,1)] hover:bg-yellow-300">
                         <a href="" class="block cursor-pointer">
                             <article class="w-full h-full">
                                 <figure class="w-full h-1/2 border-gray-800 border-b-2">
@@ -223,6 +224,48 @@
                 <div class="flex flex-col items-center justify-center">
                     <h2 class="text-gray-800 font-bold text-3xl md:text-3xl">Keunggulan Kami</h2>
                     <hr class="border-2 border-gray-800 w-20 mt-4">
+                </div>
+
+                <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+                    <article
+                        class="group bg-white rounded border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        <header class="flex flex-col space-y-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
+                                <path
+                                    d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-75 29-147t81-128.5q52-56.5 125-91T475-881q21 0 43 2t45 7q-9 45 6 85t45 66.5q30 26.5 71.5 36.5t85.5-5q-26 59 7.5 113t99.5 56q1 11 1.5 20.5t.5 20.5q0 82-31.5 154.5t-85.5 127q-54 54.5-127 86T480-80Zm-60-480q25 0 42.5-17.5T480-620q0-25-17.5-42.5T420-680q-25 0-42.5 17.5T360-620q0 25 17.5 42.5T420-560Zm-80 200q25 0 42.5-17.5T400-420q0-25-17.5-42.5T340-480q-25 0-42.5 17.5T280-420q0 25 17.5 42.5T340-360Zm260 40q17 0 28.5-11.5T640-360q0-17-11.5-28.5T600-400q-17 0-28.5 11.5T560-360q0 17 11.5 28.5T600-320ZM480-160q122 0 216.5-84T800-458q-50-22-78.5-60T683-603q-77-11-132-66t-68-132q-80-2-140.5 29t-101 79.5Q201-644 180.5-587T160-480q0 133 93.5 226.5T480-160Zm0-324Z" />
+                            </svg>
+                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Banyak Varian</h1>
+                        </header>
+                        <section>
+                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Toko kami mempunyai lebih
+                                dari 500
+                                varian
+                                produk yang bermacam-macam,
+                                mulai dari roti mini
+                                dan jajan pasar hingga spiku dan brownies.</p>
+                        </section>
+                    </article>
+
+                    <article
+                        class="group bg-white rounded border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        <header class="flex flex-col space-y-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
+                                <path
+                                    d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-75 29-147t81-128.5q52-56.5 125-91T475-881q21 0 43 2t45 7q-9 45 6 85t45 66.5q30 26.5 71.5 36.5t85.5-5q-26 59 7.5 113t99.5 56q1 11 1.5 20.5t.5 20.5q0 82-31.5 154.5t-85.5 127q-54 54.5-127 86T480-80Zm-60-480q25 0 42.5-17.5T480-620q0-25-17.5-42.5T420-680q-25 0-42.5 17.5T360-620q0 25 17.5 42.5T420-560Zm-80 200q25 0 42.5-17.5T400-420q0-25-17.5-42.5T340-480q-25 0-42.5 17.5T280-420q0 25 17.5 42.5T340-360Zm260 40q17 0 28.5-11.5T640-360q0-17-11.5-28.5T600-400q-17 0-28.5 11.5T560-360q0 17 11.5 28.5T600-320ZM480-160q122 0 216.5-84T800-458q-50-22-78.5-60T683-603q-77-11-132-66t-68-132q-80-2-140.5 29t-101 79.5Q201-644 180.5-587T160-480q0 133 93.5 226.5T480-160Zm0-324Z" />
+                            </svg>
+                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Banyak Varian</h1>
+                        </header>
+                        <section>
+                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Toko kami mempunyai lebih
+                                dari 500
+                                varian
+                                produk yang bermacam-macam,
+                                mulai dari roti mini
+                                dan jajan pasar hingga spiku dan brownies.</p>
+                        </section>
+                    </article>
                 </div>
             </div>
         </section>
