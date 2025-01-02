@@ -221,14 +221,15 @@
 
         <section class="bg-yellow-300 font-poppins px-4 lg:px-28">
             <div class="space-y-10">
-                <div class="flex flex-col items-center justify-center">
+                <div class="text-center">
                     <h2 class="text-gray-800 font-bold text-3xl md:text-3xl">Keunggulan Kami</h2>
-                    <hr class="border-2 border-gray-800 w-20 mt-4">
+                    <hr class="border-2 border-gray-800 w-20 mt-4 mx-auto">
                 </div>
 
                 <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                    <!-- Keunggulan 1 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -239,16 +240,14 @@
                         </header>
                         <section>
                             <p class="text-gray-700 font-medium text-sm group-hover:text-white">Toko kami mempunyai lebih
-                                dari 500
-                                varian
-                                produk yang bermacam-macam,
-                                mulai dari roti mini
-                                dan jajan pasar hingga spiku dan brownies.</p>
+                                dari 500 varian produk yang bermacam-macam, mulai dari roti mini dan jajan pasar hingga
+                                spiku dan brownies.</p>
                         </section>
                     </article>
 
+                    <!-- Keunggulan 2 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -264,8 +263,9 @@
                         </section>
                     </article>
 
+                    <!-- Keunggulan 3 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -280,8 +280,9 @@
                         </section>
                     </article>
 
+                    <!-- Keunggulan 4 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -297,35 +298,38 @@
                         </section>
                     </article>
 
+                    <!-- Keunggulan 5 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
                                 <path
-                                    d="M260-361v-40H160v-80h200v-80H200q-17 0-28.5-11.5T160-601v-160q0-17 11.5-28.5T200-801h60v-40h80v40h100v80H240v80h160q17 0 28.5 11.5T440-601v160q0 17-11.5 28.5T400-401h-60v40h-80Zm298 240L388-291l56-56 114 114 226-226 56 56-282 282Z" />
+                                    d="M240-80q-50 0-85-35t-35-85v-120h120v-560h600v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-600H320v480h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h360v80H360Zm0 120v-80h360v80H360ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm0 0h-40 400-360Z" />
                             </svg>
-                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Harga Bersaing</h1>
+                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Resep Kuno</h1>
                         </header>
                         <section>
-                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Semua produk kami memiliki
-                                harga yang bersaing di pasaran.</p>
+                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Semua roti dan kue buatan
+                                kami menggunakan resep yang khas sejak tahun 1989.</p>
                         </section>
                     </article>
 
+                    <!-- Keunggulan 6 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 px-6 py-7 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-4 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
                                 <path
-                                    d="M260-361v-40H160v-80h200v-80H200q-17 0-28.5-11.5T160-601v-160q0-17 11.5-28.5T200-801h60v-40h80v40h100v80H240v80h160q17 0 28.5 11.5T440-601v160q0 17-11.5 28.5T400-401h-60v40h-80Zm298 240L388-291l56-56 114 114 226-226 56 56-282 282Z" />
+                                    d="M160-80q-17 0-28.5-11.5T120-120v-200q0-33 23.5-56.5T200-400v-160q0-33 23.5-56.5T280-640h160v-58q-18-12-29-29t-11-41q0-15 6-29.5t18-26.5l56-56 56 56q12 12 18 26.5t6 29.5q0 24-11 41t-29 29v58h160q33 0 56.5 23.5T760-560v160q33 0 56.5 23.5T840-320v200q0 17-11.5 28.5T800-80H160Zm120-320h400v-160H280v160Zm-80 240h560v-160H200v160Zm80-240h400-400Zm-80 240h560-560Zm560-240H200h560Z" />
                             </svg>
-                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Harga Bersaing</h1>
+                            <h1 class="text-2xl text-gray-800 font-bold group-hover:text-white">Pesanan Khusus</h1>
                         </header>
                         <section>
-                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Semua produk kami memiliki
-                                harga yang bersaing di pasaran.</p>
+                            <p class="text-gray-700 font-medium text-sm group-hover:text-white">Kami juga melayani pesanan
+                                khusus untuk acara keluarga, ulang tahun, kantor, pernikahan, arisan, training, dan
+                                lain-lain.</p>
                         </section>
                     </article>
                 </div>
