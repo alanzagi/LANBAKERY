@@ -21,6 +21,14 @@
                         </button>
                     </div>
                 </div>
+
+                <div>
+                    <div>
+                        <img src="" alt="">
+                        <input type="number" value="1">
+                        <h2>Rp</h2>
+                    </div>
+                </div>
             </div>
         </main>
     @endsection
