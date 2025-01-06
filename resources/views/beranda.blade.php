@@ -229,7 +229,7 @@
                 <div class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     <!-- Keunggulan 1 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 min-h-60 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -247,7 +247,7 @@
 
                     <!-- Keunggulan 2 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 min-h-60 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -265,7 +265,7 @@
 
                     <!-- Keunggulan 3 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 min-h-60 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -282,7 +282,7 @@
 
                     <!-- Keunggulan 4 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 min-h-60 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -300,7 +300,7 @@
 
                     <!-- Keunggulan 5 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 min-h-60 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
@@ -317,7 +317,7 @@
 
                     <!-- Keunggulan 6 -->
                     <article
-                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 transition duration-200 hover:bg-yellow-300">
+                        class="group bg-white rounded-md border-2 border-gray-800 p-6 flex flex-col items-start gap-4 min-h-60 transition duration-200 hover:bg-yellow-300">
                         <header class="flex flex-col space-y-4">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                                 class="fill-current text-yellow-300 w-14 h-14 group-hover:text-white">
