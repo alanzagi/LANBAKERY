@@ -1,7 +1,14 @@
 <x-layout :title="$title">
     @section('page')
-        <main class="pt-20 bg-yellow-300 font-poppins px-5 md:px-20">
-            <div class="bg-white px-5 rounded-lg shadow-lg py-5 flex flex-col">
+        <main class="py-20 bg-yellow-300 font-poppins px-5 md:px-20">
+            <div class="bg-white px-12 rounded-lg shadow-lg pb-20 flex flex-col">
+                <div class="text-center text-gray-800 py-10 md:pt-20">
+                    <h1 class="text-4xl font-bold">Daftar Produk</h1>
+                    <p class="text-sm px-10 md:hidden">Kami menyediakan produk yang beragam mulai dari Jajanan Pasar hingga
+                        Kue
+                        Kering.</p>
+                </div>
+
                 <div class="flex flex-col space-y-10 md:flex-row md:space-x-10 md:px-10 md:justify-center md:items-center">
                     <select name="" id=""
                         class="border-2 border-gray-800 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none">
@@ -24,7 +31,8 @@
 
                 <div class="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2 md:gap-x-12 lg:grid-cols-3">
                     @foreach ($produk as $item)
-                        <div class="flex flex-col space-y-4 border-b-2 border-gray-800 w-full">
+                        <div
+                            class="flex flex-col space-y-4 border-b-2 border-gray-800 w-full md:border-2 md:p-6 md:rounded-lg md:shadow-lg">
                             <div class="h-52 rounded-lg overflow-hidden flex justify-center items-center">
                                 <img src="{{ asset('images/' . $item->gambar) }}" alt=""
                                     class="max-h-full max-w-full object-contain">
