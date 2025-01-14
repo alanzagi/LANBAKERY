@@ -10,26 +10,26 @@
                 </div>
 
                 <div class="flex flex-col space-y-10 md:flex-row md:space-x-10 md:px-10 md:justify-center md:items-center">
-                    <select name="" id=""
+                    <select name="sort" id="sort"
                         class="border-2 border-gray-800 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none">
-                        <option value="" class="text-gray-800">Urutkan</option>
-                        <option value="" class="">Berdasarkan Nama A - Z</option>
-                        <option value="" class="">Berdasarkan Nama Z - A</option>
-                        <option value="" class="">Harga Terendah ke Tertinggi</option>
-                        <option value="" class="">Harga Tertinggi ke Terendah</option>
+                        <option value="">Urutkan</option>
+                        <option value="nama_asc">Berdasarkan Nama A - Z</option>
+                        <option value="nama_desc">Berdasarkan Nama Z - A</option>
+                        <option value="harga_asc">Harga Terendah ke Tertinggi</option>
+                        <option value="harga_desc">Harga Tertinggi ke Terendah</option>
                     </select>
 
                     <div class="flex flex-row items-center md:pb-10">
-                        <input type="text" placeholder="Cari Produk"
+                        <input type="text" id="search" name="search" placeholder="Cari Produk"
                             class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-800 w-full" />
-                        <button
+                        <button id="search-button"
                             class="bg-yellow-300 text-gray-800 border-2 border-gray-800 p-3 font-bold hover:bg-yellow-400 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0px_rgba(15,24,42,1)] rounded-none">
                             Cari
                         </button>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2 md:gap-x-12 lg:grid-cols-3">
+                <div id="produk-list" class="grid grid-cols-1 gap-5 mt-5 md:grid-cols-2 md:gap-x-12 lg:grid-cols-3">
                     @foreach ($produk as $item)
                         <div
                             class="flex flex-col space-y-4 border-b-2 border-gray-800 w-full md:border-2 md:p-6 md:rounded-lg md:shadow-lg">
@@ -56,5 +56,42 @@
                 </div>
             </div>
         </main>
+
+        <script>
+            $(document).ready(function() {
+                function loadProducts() {
+                    const search = $('#search').val();
+                    const sort = $('#sort').val();
+
+                    $.ajax({
+                        url: '{{ route('produk') }}',
+                        type: 'GET',
+                        data: {
+                            search: search,
+                            sort: sort
+                        },
+                        success: function(data) {
+                            // Update daftar produk
+                            const html = $(data).find('#produk-list').html();
+                            $('#produk-list').html(html);
+                        },
+                        error: function() {
+                            alert('Terjadi kesalahan saat memuat data.');
+                        }
+                    });
+                }
+
+                // Event saat tombol cari diklik
+                $('#search-button').on('click', function(e) {
+                    e.preventDefault(); // Mencegah reload halaman
+                    loadProducts();
+                });
+
+                // Event saat filter urutan diubah
+                $('#sort').on('change', function() {
+                    loadProducts();
+                });
+            });
+        </script>
     @endsection
 </x-layout>
