@@ -1,6 +1,43 @@
 <x-layout :title="$title">
     @section('page')
-        <main class="py-20 bg-yellow-300 font-poppins px-5 md:px-20">
+        <header id="default-carousel" class="relative w-full pt-[5rem] bg-yellow-300 z-20" data-carousel="slide">
+            <div class="relative h-56 overflow-hidden border-y-2 border-gray-800 md:h-[27rem]">
+                <div class="hidden duration-700 ease-in-out " data-carousel-item>
+                    <img src="{{ asset('images/jajan-pasar.jpg') }}"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{ asset('images/roti-tawar.jpg') }}"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{ asset('images/puding.jpg') }}"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{ asset('images/roti-mini.jpg') }}"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{ asset('images/paketan.jpg') }}"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+        </header>
+
+        <main class="py-10 bg-yellow-300 font-poppins px-5 md:px-24">
             <div class="bg-white px-12 rounded-lg shadow-lg pb-20 flex flex-col">
                 <div class="text-center text-gray-800 py-10 md:pt-20">
                     <h1 class="text-4xl font-bold">Daftar Produk</h1>
@@ -43,8 +80,8 @@
                                     class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold w-full focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-800" />
                                 <button
                                     class="bg-yellow-300 text-gray-800 border-2 border-gray-800 p-3 font-bold hover:bg-yellow-400 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0px_rgba(15,24,42,1)] rounded-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                                        class="text-gray-800 w-6 h-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1F2937"
+                                        class=" w-6 h-6">
                                         <path
                                             d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
                                     </svg>

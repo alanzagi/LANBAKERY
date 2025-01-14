@@ -9,7 +9,7 @@
                     </p>
                     <a href="{{ route('produk') }}" class="bg-gray-800 duration-200 self-start mt-3 rounded">
                         <div
-                            class="bg-gray-200 active:translate-x-0 active:translate-y-0 active:bg-gray-200 border-gray-800 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 rounded lg:px-5 lg:py-4 hover:bg-yellow-300">
+                            class="bg-white active:translate-x-0 active:translate-y-0 border-gray-800 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 rounded lg:px-5 lg:py-4 hover:bg-yellow-300">
                             <span class="duration-200 flex justify-start items-center space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1F2937"
                                     class="w-6 h-6">
