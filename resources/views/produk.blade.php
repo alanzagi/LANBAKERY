@@ -2,7 +2,7 @@
     @section('page')
         <header id="default-carousel" class="relative w-full pt-[5rem] bg-yellow-300 z-20" data-carousel="slide">
             <div class="relative h-56 overflow-hidden border-y-2 border-gray-800 md:h-[27rem]">
-                <div class="hidden duration-700 ease-in-out " data-carousel-item>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="{{ asset('images/jajan-pasar.jpg') }}"
                         class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>

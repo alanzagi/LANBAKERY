@@ -1,7 +1,7 @@
 <x-layout :title="$title">
     @section('page')
         <header class="pt-16 text-gray-800 bg-white border-b-2">
-            <div class="pt-6 pb-8 pl-4 md:pl-24">
+            <div class="pt-6 pb-8 pl-4 md:pl-20">
                 <h2 class="flex items-center space-x-2">
                     <a href="" class="text-yellow-300 hover:opacity-80">Beranda</a>
                     <span>/</span>
@@ -13,26 +13,28 @@
 
         <main class="bg-yellow-300 py-12 flex items-center justify-center">
             <div class="px-10 w-full md:px-20">
-                <form action="" class="flex flex-col bg-white px-10 py-10 rounded-lg shadow-lg">
+                <form action="" class="flex flex-col bg-white px-10 py-10 rounded-lg shadow-md shadow-gray-800"
+                    name="submit-to-google-sheet">
                     <div class="flex flex-col space-y-4">
                         <div class="flex flex-row space-x-5">
                             <input type="text" name="nama" id="nama" placeholder="Nama"
-                                class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-800 w-full" />
+                                class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-600 w-full" />
 
                             <input type="text" name="email" id="email" placeholder="Email"
-                                class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-800 w-full" />
+                                class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-600 w-full" />
                         </div>
 
                         <input type="text" name="subjek" id="subjek" placeholder="Subjek"
-                            class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-800 w-full" />
+                            class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-600 w-full" />
 
                         <textarea name="pesan" id="pesan" placeholder="Pesan"
-                            class="border-2 border-gray-800 p-8 flex-1 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-800 w-full"></textarea>
+                            class="border-2 border-gray-800 pb-10 flex-1 bg-white text-gray-800 font-bold focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-600 w-full"></textarea>
                     </div>
 
                     <div class="bg-gray-800 duration-200 self-center rounded mt-10">
                         <button
-                            class="bg-white flex items-center justify-center active:translate-x-0 active:translate-y-0 border-gray-800 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 rounded lg:px-5 lg:py-3 hover:bg-yellow-300">
+                            class="bg-white flex items-center justify-center active:translate-x-0 active:translate-y-0 border-gray-800 border-2 duration-200 px-4 py-2 -translate-x-1 -translate-y-1 hover:-translate-x-1.5 hover:-translate-y-1.5 rounded lg:px-5 lg:py-3 hover:bg-yellow-300"
+                            type="submit">
                             <span class="flex items-center justify-center space-x-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1F2937"
                                     class="w-6 h-6">
@@ -48,5 +50,43 @@
                 </form>
             </div>
         </main>
+
+        <script>
+            const scriptURL =
+                'https://script.google.com/macros/s/AKfycbxbDg8gt0xcPCd1aT5Hq0qMVcpTNCFos65iMKaL4riWlnMWOwofpc_bgr3zSnCR3_ZG/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            var notyf = new Notyf();
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+
+                let isValid = true;
+                const formData = new FormData(form);
+                for (let [key, value] of formData.entries()) {
+                    if (!value.trim()) {
+                        isValid = false;
+                        break;
+                    }
+                }
+
+                if (!isValid) {
+                    notyf.error('Semua bagian harus diisi sebelum mengirim!');
+                    return;
+                }
+
+                fetch(scriptURL, {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => {
+                        notyf.success('Pesan telah terkirim. Terima kasih!');
+                        form.reset();
+                    })
+                    .catch(error => {
+                        notyf.error('Pesan gagal terkirim. Silakan coba lagi!');
+                        console.error('Error!', error.message);
+                    });
+            });
+        </script>
     @endsection
 </x-layout>
