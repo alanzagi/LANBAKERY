@@ -1,18 +1,18 @@
 <x-layout :title="$title">
     @section('page')
-        <header class="pt-16 text-gray-800 bg-white border-b-2">
+        <header class="pt-16 text-gray-800 bg-white border-b-2 font-poppins">
             <div class="pt-6 pb-8 pl-4 md:pl-20">
                 <h2 class="flex items-center space-x-2">
                     <a href="" class="text-yellow-300 hover:opacity-80">Beranda</a>
                     <span>/</span>
                     <p>{{ $title }}</p>
                 </h2>
-                <h1 class="font-medium text-3xl">{{ $title }}</h1>
+                <h1 class="font-semibold text-2xl text-gray-700">{{ $title }}</h1>
             </div>
         </header>
 
-        <main class="bg-yellow-300 py-12 flex items-center justify-center">
-            <div class="px-10 w-full md:px-20">
+        <main class="bg-yellow-300 py-12 flex items-center justify-center font-poppins">
+            <div class="px-4 w-full md:px-20">
                 <form action="" class="flex flex-col bg-white px-10 py-10 rounded-lg shadow-md shadow-gray-800"
                     name="submit-to-google-sheet">
                     <div class="flex flex-col space-y-4">
