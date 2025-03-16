@@ -79,7 +79,8 @@
                                 <input type="number" placeholder="Cari Produk" value="1"
                                     class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold w-full focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-800" />
                                 <button
-                                    class="bg-yellow-300 text-gray-800 border-2 border-gray-800 p-3 font-bold hover:bg-yellow-400 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0px_rgba(15,24,42,1)] rounded-none">
+                                    class="add-keranjang bg-yellow-300 text-gray-800 border-2 border-gray-800 p-3 font-bold hover:bg-yellow-400 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0px_rgba(15,24,42,1)] rounded-none"
+                                    data-id="{{ $item->id }}" data-nama="{{ $item->nama }}">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#1F2937"
                                         class=" w-6 h-6">
                                         <path
