@@ -14,7 +14,9 @@ Route::get('/produk', [ProdukController::class, 'showProduk'])->name('produk');
 Route::get('/berita', [BeritaController::class, 'showBerita'])->name('berita');
 Route::get('/toko', [TokoController::class, 'showToko'])->name('toko');
 Route::get('/kontak', [KontakController::class, 'showKontak'])->name('kontak');
+
 Route::get('/keranjang', [KeranjangController::class, 'showKeranjang'])->name('keranjang');
-Route::post('/keranjang/add', [KeranjangController::class, 'addProdukToKeranjang'])->name('keranjang.add');
-Route::delete('/keranjang/delete/{id}', [KeranjangController::class, 'deleteProdukFromKeranjang'])->name('keranjang.delete');
+Route::get('/keranjang/add/{id}', [KeranjangController::class, 'addKeranjang'])->name('keranjang.add');
+Route::get('/keranjang/delete/{id}', [KeranjangController::class, 'deleteKeranjang'])->name('keranjang.delete');
+
 Route::get('/disclaimer', [DisclaimerController::class, 'showDisclaimer'])->name('disclaimer');
