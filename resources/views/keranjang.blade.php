@@ -31,7 +31,7 @@
                                     <div class="flex justify-between items-center">
                                         <input type="number" name="quantity" id="quantity-{{ $id }}"
                                             value="{{ $item['quantity'] }}" data-id="{{ $id }}"
-                                            class="w-16 border-gray-200 border-2 rounded-lg quantity-input">
+                                            class="w-16 border-gray-200 border-2 rounded-lg quantity-input focus:border-yellow-300 focus:ring-yellow-300">
                                         <span class="text-2xl font-semibold text-gray-800" id="price-{{ $id }}">
                                             Rp{{ number_format($item['harga'] * $item['quantity'], 0, ',', '.') }}
                                         </span>

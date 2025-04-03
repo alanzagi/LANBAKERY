@@ -19,23 +19,42 @@ class KeranjangController extends Controller
 
     public function addKeranjang(Request $request, $id)
     {
-        $produk = Produk::findOrFail($id);
+        $request->validate([
+            'quantity' => 'required|integer|min:1'
+        ]);
+
+        $produk = Produk::find($id);
+
+        if (!$produk) {
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Produk tidak ditemukan.'
+            ], 404);
+        }
+
+        $quantity = (int) $request->input('quantity', 1);
         $keranjang = Session::get('keranjang', []);
 
         if (isset($keranjang[$id])) {
-            $keranjang[$id]['quantity']++;
+            $keranjang[$id]['quantity'] += $quantity;
         } else {
             $keranjang[$id] = [
                 "gambar" => $produk->gambar,
                 "nama" => $produk->nama,
                 "harga" => $produk->harga,
-                "quantity" => 1
+                "quantity" => $quantity
             ];
         }
 
         Session::put('keranjang', $keranjang);
-        return redirect()->back()->with('success', 'Produk ditambahkan ke keranjang!');
+
+        return response()->json([
+            'status' => 'success',
+            'message' => 'Produk berhasil ditambahkan ke keranjang!',
+            'keranjang' => $keranjang
+        ]);
     }
+
 
     public function deleteKeranjang($id)
     {

@@ -76,8 +76,10 @@
                             </div>
                             <h2 class="text-lg text-center font-medium">{{ $item->nama }}</h2>
                             <div class="flex flex-row items-center">
-                                <input type="number" placeholder="Cari Produk" value="1"
-                                    class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold w-full focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] rounded-none placeholder-gray-800" />
+                                <input type="number" placeholder="Cari Produk" value="1" min="1"
+                                    class="border-2 border-gray-800 p-3 flex-1 bg-white text-gray-800 font-bold w-full 
+    focus:border-gray-800 focus:outline-none focus:ring-0 shadow-[4px_4px_0px_rgba(15,23,42,1)] 
+    rounded-none placeholder-gray-800" />
                                 <a href="#"
                                     class="add-keranjang bg-yellow-300 text-gray-800 border-2 border-gray-800 p-3 font-bold hover:bg-yellow-400 active:translate-x-1 active:translate-y-1 shadow-[4px_4px_0px_rgba(15,24,42,1)] rounded-none"
                                     data-id="{{ $item->id }}" data-nama="{{ $item->nama }}">
@@ -98,6 +100,22 @@
 
         <script>
             $(document).ready(function() {
+                const notyf = new Notyf({
+                    duration: 2000,
+                    position: {
+                        x: 'center',
+                        y: 'bottom',
+                    },
+                });
+
+                document.querySelectorAll('input[type="number"]').forEach(input => {
+                    input.addEventListener('input', function() {
+                        if (this.value < 1) {
+                            this.value = 1;
+                        }
+                    });
+                });
+
                 function loadProducts() {
                     const search = $('#search').val();
                     const sort = $('#sort').val();
@@ -131,18 +149,33 @@
                     loadProducts();
                 });
 
-                $(".add-keranjang").click(function(e) {
+                $(document).on("click", ".add-keranjang", function(e) {
                     e.preventDefault();
+
                     var id = $(this).data("id");
+                    var quantity = $(this).closest("div").find("input[type='number']").val();
 
                     $.ajax({
                         url: "/keranjang/add/" + id,
-                        type: "GET",
+                        type: "POST",
+                        data: {
+                            id: id,
+                            quantity: quantity,
+                            _token: "{{ csrf_token() }}"
+                        },
                         success: function(response) {
-                            alert("Produk berhasil ditambahkan ke keranjang!");
+                            if (response.status === "success") {
+                                notyf.success("Produk berhasil ditambahkan ke keranjang!");
+                            } else {
+                                notyf.error(response.message || "Gagal menambahkan produk.");
+                            }
+                        },
+                        error: function(xhr) {
+                            notyf.error("Terjadi kesalahan. Coba lagi nanti!");
                         }
                     });
                 });
+
             });
         </script>
     @endsection

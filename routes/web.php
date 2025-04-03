@@ -16,7 +16,7 @@ Route::get('/toko', [TokoController::class, 'showToko'])->name('toko');
 Route::get('/kontak', [KontakController::class, 'showKontak'])->name('kontak');
 
 Route::get('/keranjang', [KeranjangController::class, 'showKeranjang'])->name('keranjang');
-Route::get('/keranjang/add/{id}', [KeranjangController::class, 'addKeranjang'])->name('keranjang.add');
+Route::post('/keranjang/add/{id}', [KeranjangController::class, 'addKeranjang'])->name('keranjang.add');
 Route::get('/keranjang/delete/{id}', [KeranjangController::class, 'deleteKeranjang'])->name('keranjang.delete');
 Route::post('/keranjang/update/', [KeranjangController::class, 'updateKeranjang'])->name('keranjang.update');
 
