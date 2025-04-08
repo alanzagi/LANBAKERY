@@ -1,15 +1,14 @@
 <x-layout :title="$title">
     @section('page')
         <main class="bg-yellow-300 pt-20 font-poppins">
-            <section class="text-center justify-center py-16 space-y-4">
+            <section class="text-center justify-center py-16 space-y-4 lg:px-40">
                 <section class="px-10 text-gray-800 pb-4 space-y-2">
                     <h1 class="text-3xl font-bold">Pemesanan</h1>
                     <p class="">Staf kami akan menghubungi Anda setelah mengisi data diri dibawah. </p>
                 </section>
 
-
                 {{-- Menampilkan produk yang ada di keranjang --}}
-                <section class="bg-white shadow-lg text-gray-800 mx-4 md:mx-10 p-6 border-t border-gray-800 ">
+                <section class="bg-white shadow-lg text-gray-800 mx-4 md:mx-10 p-6 border-t-2 border-gray-800">
                     @if (!empty($keranjang))
                         <div class="font-medium">
                             <h2 class="flex items-start border-b border-gray-400 pb-2 font-medium">Daftar Produk</h2>
@@ -44,7 +43,7 @@
                 </section>
 
                 {{-- Form Data Diri --}}
-                <section class="bg-white shadow-lg border-b border-gray-800 text-gray-800 mx-4 md:mx-10 p-6 mt-6">
+                <section class="bg-white shadow-lg border-b-2 border-gray-800 text-gray-800 mx-4 md:mx-10 p-6 mt-6">
                     <h2 class="flex items-start mb-4 border-b border-gray-400 pb-2 font-medium">Data Diri</h2>
                     <form id="checkoutForm">
                         @csrf

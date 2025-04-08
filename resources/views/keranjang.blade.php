@@ -1,9 +1,9 @@
 <x-layout :title="$title">
     @section('page')
         <main class="bg-yellow-300 pt-20 font-poppins">
-            <section class="text-center justify-center py-16 space-y-4">
+            <section class="text-center justify-center py-16 space-y-4 lg:px-40">
                 <h1 class="text-3xl font-bold text-gray-800 pb-10">Keranjang</h1>
-                <section class="bg-white rounded-lg shadow-lg text-gray-800 mx-4 md:mx-10 p-6">
+                <section class="bg-white border-2 border-gray-800 box-border shadow-lg text-gray-800 mx-4 md:mx-10 p-6">
                     <form action="{{ route('keranjang.data_diri') }}" method="POST">
                         @csrf
                         @if (!empty($keranjang))
