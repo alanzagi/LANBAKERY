@@ -50,43 +50,5 @@
                 </form>
             </div>
         </main>
-
-        <script>
-            const scriptURL =
-                'https://script.google.com/macros/s/AKfycbxbDg8gt0xcPCd1aT5Hq0qMVcpTNCFos65iMKaL4riWlnMWOwofpc_bgr3zSnCR3_ZG/exec';
-            const form = document.forms['submit-to-google-sheet'];
-            var notyf = new Notyf();
-
-            form.addEventListener('submit', e => {
-                e.preventDefault();
-
-                let isValid = true;
-                const formData = new FormData(form);
-                for (let [key, value] of formData.entries()) {
-                    if (!value.trim()) {
-                        isValid = false;
-                        break;
-                    }
-                }
-
-                if (!isValid) {
-                    notyf.error('Semua bagian harus diisi sebelum mengirim!');
-                    return;
-                }
-
-                fetch(scriptURL, {
-                        method: 'POST',
-                        body: formData
-                    })
-                    .then(response => {
-                        notyf.success('Pesan telah terkirim. Terima kasih!');
-                        form.reset();
-                    })
-                    .catch(error => {
-                        notyf.error('Pesan gagal terkirim. Silakan coba lagi!');
-                        console.error('Error!', error.message);
-                    });
-            });
-        </script>
     @endsection
 </x-layout>

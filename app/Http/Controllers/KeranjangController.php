@@ -100,4 +100,18 @@ class KeranjangController extends Controller
 
         return response()->json(['error' => 'Item not found'], 404);
     }
+
+    public function dataDiri(Request $request)
+    {
+        $keranjang = $request->input('produk'); // Mengambil data dari form
+        $totalHarga = array_reduce($keranjang, function ($total, $item) {
+            return $total + ($item['harga'] * $item['quantity']);
+        }, 0);
+
+        return view('keranjang.data-diri', [
+            'title' => 'Data Diri',
+            'keranjang' => $keranjang,
+            'totalHarga' => $totalHarga
+        ]);
+    }
 }

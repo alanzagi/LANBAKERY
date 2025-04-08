@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="{{ asset('images/alanxcode.jpg') }}" type="image/x-icon">
     {{-- J-Query --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    {{-- Internal Javascript --}}
+    <script src="{{ asset('js/script.js') }}"></script>
     {{-- TailwindCSS --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     {{-- Notyf --}}
