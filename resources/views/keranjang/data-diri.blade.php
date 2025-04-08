@@ -9,18 +9,20 @@
 
 
                 {{-- Menampilkan produk yang ada di keranjang --}}
-                <section class="bg-gray-200 rounded-lg shadow-lg text-gray-800 mx-4 md:mx-10 p-6 border border-t-gray-800 ">
+                <section class="bg-white shadow-lg text-gray-800 mx-4 md:mx-10 p-6 border-t border-gray-800 ">
                     @if (!empty($keranjang))
-                        <div class="">
-                            <h2 class="flex items-start ">Daftar Produk</h2>
+                        <div class="font-medium">
+                            <h2 class="flex items-start border-b border-gray-400 pb-2 font-medium">Daftar Produk</h2>
 
                             @php $totalHarga = 0; @endphp
                             @foreach ($keranjang as $id => $item)
                                 @php $totalHarga += $item['harga'] * $item['quantity']; @endphp
-                                <div class="">
+                                <div class="py-2 border-b border-gray-400 keranjang-item">
                                     <div class="flex items-center justify-between">
-                                        <h2 class="">{{ $item['nama'] }} x {{ $item['quantity'] }}</h2>
-                                        <span class="">
+                                        <h2 class="text-sm produk-nama">{{ $item['nama'] }} x
+                                            <span class="produk-qty">{{ $item['quantity'] }}</span>
+                                        </h2>
+                                        <span class="produk-harga">
                                             Rp{{ number_format($item['harga'] * $item['quantity'], 0, ',', '.') }}
                                         </span>
                                     </div>
@@ -28,7 +30,6 @@
                             @endforeach
                         </div>
                         <div class="bg-yellow-300 mt-6 p-6 rounded-lg text-center">
-                            <h2 class="uppercase text-2xl tracking-widest">Ringkasan</h2>
                             <div
                                 class="bg-white flex justify-between p-4 border-2 border-gray-800 text-gray-800 mt-4 rounded-lg">
                                 <span class="font-bold">Total</span>
@@ -43,37 +44,31 @@
                 </section>
 
                 {{-- Form Data Diri --}}
-                <section class="bg-white rounded-lg shadow-lg text-gray-800 mx-4 md:mx-10 p-6 mt-6">
-                    <h2 class="text-2xl font-semibold mb-4">Isi Data Diri</h2>
-                    <form action="" method="POST">
+                <section class="bg-white shadow-lg border-b border-gray-800 text-gray-800 mx-4 md:mx-10 p-6 mt-6">
+                    <h2 class="flex items-start mb-4 border-b border-gray-400 pb-2 font-medium">Data Diri</h2>
+                    <form id="checkoutForm">
                         @csrf
                         <div class="mb-4">
-                            <label for="nama" class="block text-lg font-semibold">Nama Lengkap</label>
+                            <label for="nama" class="block text-sm text-left">Nama Lengkap</label>
                             <input type="text" id="nama" name="nama" required
                                 class="w-full border border-gray-300 rounded-lg p-2 focus:border-yellow-500">
                         </div>
 
                         <div class="mb-4">
-                            <label for="email" class="block text-lg font-semibold">Email</label>
-                            <input type="email" id="email" name="email" required
-                                class="w-full border border-gray-300 rounded-lg p-2 focus:border-yellow-500">
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="alamat" class="block text-lg font-semibold">Alamat</label>
+                            <label for="alamat" class="block text-sm text-left">Alamat</label>
                             <textarea id="alamat" name="alamat" required
                                 class="w-full border border-gray-300 rounded-lg p-2 focus:border-yellow-500"></textarea>
                         </div>
 
                         <div class="mb-4">
-                            <label for="nomor_hp" class="block text-lg font-semibold">Nomor HP</label>
-                            <input type="text" id="nomor_hp" name="nomor_hp" required
+                            <label for="nomor_hp" class="block text-sm text-left">Nomor HP</label>
+                            <input type="text" id="nomor_hp" name="nomor_hp" required pattern="[0-9]{10,15}"
                                 class="w-full border border-gray-300 rounded-lg p-2 focus:border-yellow-500">
                         </div>
 
                         <button type="submit"
                             class="mt-4 w-full h-12 bg-gray-800 text-yellow-300 rounded-lg font-medium hover:bg-gray-700">
-                            Lanjut ke Pembayaran
+                            Pesan Sekarang
                         </button>
                     </form>
                 </section>

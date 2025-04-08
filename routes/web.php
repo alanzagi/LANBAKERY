@@ -20,5 +20,6 @@ Route::post('/keranjang/add/{id}', [KeranjangController::class, 'addKeranjang'])
 Route::get('/keranjang/delete/{id}', [KeranjangController::class, 'deleteKeranjang'])->name('keranjang.delete');
 Route::post('/keranjang/update/', [KeranjangController::class, 'updateKeranjang'])->name('keranjang.update');
 Route::post('/keranjang/data-diri', [KeranjangController::class, 'dataDiri'])->name('keranjang.data_diri');
+Route::post('/keranjang/checkout', [KeranjangController::class, 'checkoutKeranjang'])->name('keranjang.checkout');
 
 Route::get('/disclaimer', [DisclaimerController::class, 'showDisclaimer'])->name('disclaimer');

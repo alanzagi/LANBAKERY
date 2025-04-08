@@ -117,4 +117,39 @@
             }
         });
     });
+
+    document.getElementById("checkoutForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Mencegah reload form
+
+        // Ambil nilai input
+        let nama = document.getElementById("nama").value;
+        let alamat = document.getElementById("alamat").value;
+        let nomor_hp = document.getElementById("nomor_hp").value;
+
+        // Kirim data ke Laravel (menggunakan fetch API)
+        fetch("{{ route('keranjang.checkout') }}", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRF-TOKEN": document.querySelector('input[name="_token"]').value
+                },
+                body: JSON.stringify({
+                    nama,
+                    alamat,
+                    nomor_hp
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success && data.waLink) {
+                    // Buka WhatsApp di tab baru
+                    window.open(data.waLink, "_blank");
+
+                    // Redirect ke beranda setelah 2 detik
+                    setTimeout(() => {
+                        window.location.href = "/";
+                    }, 2000);
+                }
+            });
+    });
 </script>
